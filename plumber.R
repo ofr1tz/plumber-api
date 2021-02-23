@@ -49,7 +49,7 @@ function(
 	buff <- sf::st_point(c(lon, lat), "XY") %>%
 		sf::st_sfc(crs = 4326) %>%
 		sf::st_sf() %>% 
-		sf:st_wrap_dateline() %>%
+		sf::st_wrap_dateline() %>%
 		geobuffer::geobuffer_pts(dist_m = radius, step_dg = step_dg, output = "sf")
 		
 	# function to extract worldpop data
