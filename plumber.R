@@ -69,6 +69,8 @@ function(
 			properties = jsonlite::unbox(results), 
 			geometry = (wellknown::sf_convert(buff) %>% wellknown::wkt2geojson())$geometry
 		)
-	} else { results }
+	} else { 
+		results 
+	}
 }
 
