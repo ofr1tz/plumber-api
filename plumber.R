@@ -6,7 +6,7 @@ require(sf)
 
 #* Extract WorldPop values on a buffer around a geographic point
 #* @serializer unboxedJSON 
-#* #* @param lon:number Point longitude
+#* @param lon:number Point longitude
 #* @param lat:number Point latitude
 #* @param radius:number Radius of the buffer in meter
 #* @param step_dg:numeric Step of bearings in degree for point density of buffer edge
