@@ -53,7 +53,7 @@ function(
 		
 	# function to extract worldpop data
 	extract_year <- function(year) {
-		path <- paste0("d:/onedrive/data/worldpop/ppp_", year, "_1km_Aggregated.tif")
+		path <- paste0("data/worldpop/ppp_", year, "_1km_Aggregated.tif")
 		r <- raster::raster(path)
 		names(r) <- paste0("worldpop", year)
 		exactextractr::exact_extract(x = r, y = buff, fun = fun, force_df = T, full_colnames = T)
